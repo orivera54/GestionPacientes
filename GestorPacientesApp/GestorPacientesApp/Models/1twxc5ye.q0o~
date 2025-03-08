@@ -1,0 +1,17 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+
+namespace GestorPacientesApp.Models
+{
+    [Table("followups", Schema = "public")]
+    public class Followup
+    {
+        public int Id { get; set; }
+        public int PatientId { get; set; }
+        public string Note { get; set; } = string.Empty;
+        public DateTime Date { get; set; } = DateTime.UtcNow;
+
+        // Propiedad de navegación
+        public Patient? Patient { get; set; }
+    }
+}
