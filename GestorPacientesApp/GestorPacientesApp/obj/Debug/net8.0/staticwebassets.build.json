@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "87IKw+1AGk9q+JDaOCPomuYFmTxpZpIv80dTVJu0u5A=",
+  "Source": "GestorPacientesApp",
+  "BasePath": "_content/GestorPacientesApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

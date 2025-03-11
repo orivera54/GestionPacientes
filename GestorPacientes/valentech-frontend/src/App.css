@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.App {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #4a4a4a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #eaf7ea;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.app {
+  display: flex;
+}
+
+.sidebar {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    height: 100%;
+    background-color: #f8f9fa; /* Color de fondo del menú */
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+}
+
+.main-content {
+  margin-left: 200px; /* Debe coincidir con el ancho del sidebar */
+  padding: 20px;
+  width: calc(100% - 200px); /* Ancho del contenido principal */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+}
+
+.confirmation {
+  color: green;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 128, 0, 0.2);
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.error {
+  color: red;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  z-index: 1000;
+}

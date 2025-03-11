@@ -18,7 +18,6 @@ namespace GestorPacientesApp.Models
         [Column("date")]
         public DateTime Date { get; set; } = DateTime.UtcNow;
 
-        // Propiedad de navegación
-        public Patient? Patient { get; set; }
+        
     }
 }

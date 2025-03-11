@@ -19,6 +19,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Registrar HttpClient y el servicio de RandomUser API
 builder.Services.AddHttpClient<RandomUserService>();
 
+// Configurar CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        builder => builder.WithOrigins("http://localhost:3000") // URL del frontend React
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,6 +38,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+
+// Aplicar la política CORS
+app.UseCors("AllowReactApp");
 
 app.UseAuthorization();
 
