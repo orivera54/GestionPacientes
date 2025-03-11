@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "GestorPacientesApp.Controllers.FollowupsController",
+    "Method": "AddFollowup",
+    "RelativePath": "api/Followups",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "followup",
+        "Type": "GestorPacientesApp.Models.Followup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestorPacientesApp.Controllers.FollowupsController",
+    "Method": "GetFollowups",
+    "RelativePath": "api/Followups/{patientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestorPacientesApp.Controllers.PatientsController",
+    "Method": "GetPatients",
+    "RelativePath": "api/Patients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestorPacientesApp.Controllers.PatientsController",
+    "Method": "CreatePatient",
+    "RelativePath": "api/Patients",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patient",
+        "Type": "GestorPacientesApp.Models.Patient",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

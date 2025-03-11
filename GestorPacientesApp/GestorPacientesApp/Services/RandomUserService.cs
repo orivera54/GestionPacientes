@@ -13,7 +13,7 @@ namespace GestorPacientesApp.Services
             _httpClient = httpClient;
         }
 
-        // Llama a Random User API y compara el email (o cualquier otro dato)
+        // Llama a Random User API y compara el email de los pacientes con el de los usuarios
         public async Task<bool> ValidatePatient(Patient patient)
         {
             // Solicitamos 5 usuarios aleatorios
